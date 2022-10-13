@@ -1,0 +1,58 @@
+{
+  "questions": [
+    {
+      "questionText": "What is the only food that cannot go bad?",
+      "answerOptions": [
+        { "answerText": "Dark chocolate", "isCorrect": false },
+        { "answerText": "Peanut butter", "isCorrect": false },
+        { "answerText": "Canned tuna", "isCorrect": false },
+        { "answerText": "Honey", "isCorrect": true }
+      ]
+    },
+    {
+      "questionText": "What is the most visited tourist attraction in the world?",
+      "answerOptions": [
+        { "answerText": "Statue of Liberty", "isCorrect": false },
+        { "answerText": "Eiffel Tower", "isCorrect": true },
+        { "answerText": "Great Wall of China", "isCorrect": false },
+        { "answerText": "Colosseum", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "What’s the heaviest organ in the human body?",
+      "answerOptions": [
+        { "answerText": "Liver", "isCorrect": true },
+        { "answerText": "Skin", "isCorrect": false },
+        { "answerText": "Brain", "isCorrect": false },
+        { "answerText": "Heart", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "Which of these EU countries does not use the euro as its currency?",
+      "answerOptions": [
+        { "answerText": "Poland", "isCorrect": false },
+        { "answerText": "Denmark", "isCorrect": false },
+        { "answerText": "Sweden", "isCorrect": false },
+        { "answerText": "All of the above", "isCorrect": true }
+      ]
+    },
+    {
+      "questionText": "What element does the chemical symbol Au stand for?",
+      "answerOptions": [
+        { "answerText": "Silver", "isCorrect": false },
+        { "answerText": "Magnesium", "isCorrect": false },
+        { "answerText": "Salt", "isCorrect": false },
+        { "answerText": "Gold", "isCorrect": true }
+      ]
+    },
+    {
+      "questionText": "Which fast food restaurant has the largest number of retail locations in the world?",
+      "answerOptions": [
+        { "answerText": "KFC", "isCorrect": false },
+        { "answerText": "Subway", "isCorrect": true },
+        { "answerText": "Burger King", "isCorrect": false },
+        { "answerText": "McDonald’s", "isCorrect": false }
+      ]
+    }
+  ]
+}
