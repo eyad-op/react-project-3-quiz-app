@@ -1,3 +1,12 @@
+# React quiz app
+
+Learning React by creating small projects
+
+## Learning plan for this project
+
+- Managing complex state objects
+- Working with multiple state hooks to create dynamic UI
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
