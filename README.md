@@ -6,6 +6,7 @@ Learning React by creating small projects
 
 - Managing complex state objects
 - Working with multiple state hooks to create dynamic UI
+- Working with components
 
 # Getting Started with Create React App
 
