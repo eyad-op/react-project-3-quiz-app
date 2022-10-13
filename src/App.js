@@ -6,10 +6,13 @@ function App() {
   const questions = Questions.questions;
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
-
   const [showScore, setShowScore] = useState(false);
+  const [score, setScore] = useState(0);
 
-  const handleAnswerButtonClick = () => {
+  const handleAnswerButtonClick = (isCorrect) => {
+    if (isCorrect === true) {
+      setScore((score) => score + 1);
+    }
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
@@ -21,7 +24,9 @@ function App() {
   return (
     <div className="container">
       {showScore ? (
-        <h1 className="score">You have scored 1 out of {questions.length}</h1>
+        <h1 className="score">
+          You have scored {score} out of {questions.length}
+        </h1>
       ) : (
         <div className="question">
           <div className="question__body">
@@ -37,7 +42,7 @@ function App() {
             {questions[currentQuestion].answerOptions.map((answer, index) => {
               return (
                 <button
-                  onClick={handleAnswerButtonClick}
+                  onClick={() => handleAnswerButtonClick(answer.isCorrect)}
                   key={index}
                   className="question__answer"
                 >
