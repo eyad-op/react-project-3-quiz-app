@@ -1,6 +1,8 @@
 import { useState } from "react";
-import "./App.scss";
 import Questions from "./data.json";
+import Answers from "./Components/Answers";
+import Score from "./Components/Score";
+import "./App.scss";
 
 function App() {
   const questions = Questions.questions;
@@ -30,12 +32,7 @@ function App() {
   return (
     <div className="container">
       {showScore ? (
-        <div className="score">
-          <h2>
-            You have scored {score} out of {questions.length}
-          </h2>
-          <button onClick={handleResetGame}>Reset the game</button>
-        </div>
+        <Score score={score} questions={questions} reset={handleResetGame} />
       ) : (
         <div className="question">
           <div className="question__body">
@@ -47,19 +44,11 @@ function App() {
               {questions[currentQuestion].questionText}
             </h1>
           </div>
-          <div className="question__answers">
-            {questions[currentQuestion].answerOptions.map((answer, index) => {
-              return (
-                <button
-                  onClick={() => handleAnswerButtonClick(answer.isCorrect)}
-                  key={index}
-                  className="question__answer"
-                >
-                  {answer.answerText}
-                </button>
-              );
-            })}
-          </div>
+          <Answers
+            questions={questions}
+            currentQuestion={currentQuestion}
+            choose={handleAnswerButtonClick}
+          />
         </div>
       )}
     </div>
