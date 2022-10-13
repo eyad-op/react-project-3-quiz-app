@@ -21,12 +21,21 @@ function App() {
     }
   };
 
+  const handleResetGame = () => {
+    setCurrentQuestion(0);
+    setShowScore(false);
+    setScore(0);
+  };
+
   return (
     <div className="container">
       {showScore ? (
-        <h1 className="score">
-          You have scored {score} out of {questions.length}
-        </h1>
+        <div className="score">
+          <h2>
+            You have scored {score} out of {questions.length}
+          </h2>
+          <button onClick={handleResetGame}>Reset the game</button>
+        </div>
       ) : (
         <div className="question">
           <div className="question__body">
